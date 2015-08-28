@@ -1,27 +1,21 @@
 package com.spideroak.fileviewerplugin;
 
-import java.util.HashMap;
-import java.util.Map;
+import android.content.Intent;
+import android.net.Uri;
+import android.text.Html;
+import android.util.Log;
+import android.webkit.MimeTypeMap;
 
-import java.io.File;
-
-import org.apache.cordova.DroidGap;
+import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaActivity;
+import org.apache.cordova.CordovaPlugin;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.content.Intent;
-import android.net.Uri;
-import android.util.Log;
-import android.text.Html;
-import android.webkit.MimeTypeMap;
 import java.net.HttpURLConnection;
-
-import org.apache.cordova.CordovaActivity;
-import org.apache.cordova.CallbackContext;
-import org.apache.cordova.CordovaInterface;
-import org.apache.cordova.CordovaPlugin;
-import org.apache.cordova.PluginResult;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * This plugin is basically a minimal version of Boris Smus's WebIntents plugin,
